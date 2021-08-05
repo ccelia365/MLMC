@@ -8546,3 +8546,1472 @@ app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end
 app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
 app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
 app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for ::1 at 2021-08-05 06:26:37 -0400
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 668)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 385.3ms | Allocations: 10110)
+Completed 200 OK in 446ms (Views: 416.4ms | ActiveRecord: 0.0ms | Allocations: 13908)
+
+
+Started GET "/" for ::1 at 2021-08-05 06:26:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 132.9ms | Allocations: 6424)
+Completed 200 OK in 139ms (Views: 137.1ms | ActiveRecord: 0.0ms | Allocations: 6991)
+
+
+Started POST "/sessions" for ::1 at 2021-08-05 06:26:56 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 42ms (ActiveRecord: 1.7ms | Allocations: 6009)
+
+
+Started GET "/" for ::1 at 2021-08-05 06:26:56 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 4402)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.0ms | Allocations: 4956)
+
+
+Started POST "/sessions" for ::1 at 2021-08-05 06:27:09 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"test1@test1.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test1@test1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 347ms (ActiveRecord: 2.2ms | Allocations: 4025)
+
+
+Started GET "/" for ::1 at 2021-08-05 06:27:09 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 99.9ms | Allocations: 4261)
+Completed 200 OK in 105ms (Views: 103.8ms | ActiveRecord: 0.0ms | Allocations: 4736)
+
+
+Started POST "/sessions" for ::1 at 2021-08-05 06:27:23 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"test1@test1.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test1@test1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 347ms (ActiveRecord: 0.8ms | Allocations: 928)
+
+
+Started GET "/dashboard" for ::1 at 2021-08-05 06:27:23 -0400
+Processing by MlmcController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mlmc/index.html.erb within layouts/application
+  Rendered mlmc/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.1ms | Allocations: 4530)
+Completed 200 OK in 143ms (Views: 134.3ms | ActiveRecord: 0.0ms | Allocations: 5698)
+
+
+Started GET "/tasks" for ::1 at 2021-08-05 06:27:37 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1782)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1865)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms | Allocations: 4860)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Today</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= link_to 'Add Task', new_todo_path %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todos.each do |todo| %>
+      <tr>
+        <td><%= todo.name %></td>
+        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+        <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1>Simple Modal App</h1>
+<p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-1-title">
+          Micromodal
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+        <p>
+        Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+        </p>
+      </main>
+      <footer class="modal__footer">
+        <button class="modal__btn modal__btn-primary">Continue</button>
+        <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<% #Adding Links %>
+
+<div class="field">
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</div>
+<div class="field">
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+</div>
+<div class="field">
+  <%= form.label :file %>
+  <%= form.file_field :file %>
+</div>
+<div class="action">
+  <%= form.submit %>
+</div>
+<% end %>
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Today</h1>
+4:    
+5:    <table>
+6:      <thead>
+7:        <tr>
+8:          <th><%= link_to 'Add Task', new_todo_path %></th>
+9:          <th colspan="3"></th>
+10:        </tr>
+11:      </thead>
+12:    
+13:      <tbody>
+14:        <% @todos.each do |todo| %>
+15:          <tr>
+16:            <td><%= todo.name %></td>
+17:            <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+18:            <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+19:          </tr>
+20:        <% end %>
+21:      </tbody>
+22:    </table>
+23:    
+24:    <br>
+25:    
+26:    <h1>Simple Modal App</h1>
+27:    <p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+28:    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+29:      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+30:        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+31:          <header class="modal__header">
+32:            <h2 class="modal__title" id="modal-1-title">
+33:              Micromodal
+34:            </h2>
+35:            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+36:          </header>
+37:          <main class="modal__content" id="modal-1-content">
+38:            <p>
+39:            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+40:            </p>
+41:          </main>
+42:          <footer class="modal__footer">
+43:            <button class="modal__btn modal__btn-primary">Continue</button>
+44:            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+45:          </footer>
+46:        </div>
+47:      </div>
+48:    </div>
+49:    
+50:    <% #Adding Links %>
+51:    
+52:    <div class="field">
+53:      <%= form.label :title %>
+54:      <%= form.text_field :title %>
+55:    </div>
+56:    <div class="field">
+57:      <%= form.label :description %>
+58:      <%= form.text_area :description %>
+59:    </div>
+60:    <div class="field">
+61:      <%= form.label :file %>
+62:      <%= form.file_field :file %>
+63:    </div>
+64:    <div class="action">
+65:      <%= form.submit %>
+66:    </div>
+67:    <% end %>
+  
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+Started GET "/tasks" for ::1 at 2021-08-05 06:29:56 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1413)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1487)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 2911)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Today</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= link_to 'Add Task', new_todo_path %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todos.each do |todo| %>
+      <tr>
+        <td><%= todo.name %></td>
+        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+        <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1>Simple Modal App</h1>
+<p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-1-title">
+          Micromodal
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+        <p>
+        Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+        </p>
+      </main>
+      <footer class="modal__footer">
+        <button class="modal__btn modal__btn-primary">Continue</button>
+        <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</div>
+<div class="field">
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+</div>
+<div class="field">
+  <%= form.label :file %>
+  <%= form.file_field :file %>
+</div>
+<div class="action">
+  <%= form.submit %>
+</div>
+<% end %>
+):
+1:    <h1>Today</h1>
+2:    
+3:    <table>
+4:      <thead>
+5:        <tr>
+6:          <th><%= link_to 'Add Task', new_todo_path %></th>
+7:          <th colspan="3"></th>
+8:        </tr>
+9:      </thead>
+10:    
+11:      <tbody>
+12:        <% @todos.each do |todo| %>
+13:          <tr>
+14:            <td><%= todo.name %></td>
+15:            <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+16:            <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+17:          </tr>
+18:        <% end %>
+19:      </tbody>
+20:    </table>
+21:    
+22:    <br>
+23:    
+24:    <h1>Simple Modal App</h1>
+25:    <p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+26:    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+27:      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+28:        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+29:          <header class="modal__header">
+30:            <h2 class="modal__title" id="modal-1-title">
+31:              Micromodal
+32:            </h2>
+33:            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+34:          </header>
+35:          <main class="modal__content" id="modal-1-content">
+36:            <p>
+37:            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+38:            </p>
+39:          </main>
+40:          <footer class="modal__footer">
+41:            <button class="modal__btn modal__btn-primary">Continue</button>
+42:            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+43:          </footer>
+44:        </div>
+45:      </div>
+46:    </div>
+47:    
+48:    <div class="field">
+49:      <%= form.label :title %>
+50:      <%= form.text_field :title %>
+51:    </div>
+52:    <div class="field">
+53:      <%= form.label :description %>
+54:      <%= form.text_area :description %>
+55:    </div>
+56:    <div class="field">
+57:      <%= form.label :file %>
+58:      <%= form.file_field :file %>
+59:    </div>
+60:    <div class="action">
+61:      <%= form.submit %>
+62:    </div>
+63:    <% end %>
+  
+app/views/tasks/index.html.erb:65: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:65: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:65: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:65: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:65: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:65: syntax error, unexpected `end', expecting end-of-input
+Started GET "/tasks" for ::1 at 2021-08-05 06:30:30 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1443)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1516)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 2922)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Today</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= link_to 'Add Task', new_todo_path %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todos.each do |todo| %>
+      <tr>
+        <td><%= todo.name %></td>
+        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+        <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1>Simple Modal App</h1>
+<p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-1-title">
+          Micromodal
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+        <p>
+        Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+        </p>
+      </main>
+      <footer class="modal__footer">
+        <button class="modal__btn modal__btn-primary">Continue</button>
+        <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<% #Adding Links %>
+
+<div class="field">
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</div>
+<div class="field">
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+</div>
+<div class="field">
+  <%= form.label :file %>
+  <%= form.file_field :file %>
+</div>
+<div class="action">
+  <%= form.submit %>
+</div>
+<% end %>
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Today</h1>
+4:    
+5:    <table>
+6:      <thead>
+7:        <tr>
+8:          <th><%= link_to 'Add Task', new_todo_path %></th>
+9:          <th colspan="3"></th>
+10:        </tr>
+11:      </thead>
+12:    
+13:      <tbody>
+14:        <% @todos.each do |todo| %>
+15:          <tr>
+16:            <td><%= todo.name %></td>
+17:            <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+18:            <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+19:          </tr>
+20:        <% end %>
+21:      </tbody>
+22:    </table>
+23:    
+24:    <br>
+25:    
+26:    <h1>Simple Modal App</h1>
+27:    <p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+28:    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+29:      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+30:        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+31:          <header class="modal__header">
+32:            <h2 class="modal__title" id="modal-1-title">
+33:              Micromodal
+34:            </h2>
+35:            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+36:          </header>
+37:          <main class="modal__content" id="modal-1-content">
+38:            <p>
+39:            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+40:            </p>
+41:          </main>
+42:          <footer class="modal__footer">
+43:            <button class="modal__btn modal__btn-primary">Continue</button>
+44:            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+45:          </footer>
+46:        </div>
+47:      </div>
+48:    </div>
+49:    
+50:    <% #Adding Links %>
+51:    
+52:    <div class="field">
+53:      <%= form.label :title %>
+54:      <%= form.text_field :title %>
+55:    </div>
+56:    <div class="field">
+57:      <%= form.label :description %>
+58:      <%= form.text_area :description %>
+59:    </div>
+60:    <div class="field">
+61:      <%= form.label :file %>
+62:      <%= form.file_field :file %>
+63:    </div>
+64:    <div class="action">
+65:      <%= form.submit %>
+66:    </div>
+67:    <% end %>
+  
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+Started GET "/tasks" for ::1 at 2021-08-05 06:34:09 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 4842)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 4914)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms | Allocations: 6321)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_todo_path' for #<ActionView::Base:0x0000000000b720>
+Did you mean?  new_task_path
+               new_user_path
+               new_group_path):
+     5: <table>
+     6:   <thead>
+     7:     <tr>
+     8:       <th><%= link_to 'Add Task', new_todo_path %></th>
+     9:       <th colspan="3"></th>
+    10:     </tr>
+    11:   </thead>
+  
+app/views/tasks/index.html.erb:8
+Started GET "/tasks" for ::1 at 2021-08-05 06:34:59 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1996)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2068)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 3473)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:   </thead>
+    12: 
+    13:   <tbody>
+    14:     <% @todos.each do |todo| %>
+    15:       <tr>
+    16:         <td><%= todo.name %></td>
+    17:         <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+  
+app/views/tasks/index.html.erb:14
+Started GET "/tasks" for ::1 at 2021-08-05 06:41:45 -0400
+Processing by TasksController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tasks_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1424)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 1497)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 1.3ms | Allocations: 5278)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Today</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= link_to 'Add Task', new_todo_path %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todos.each do |todo| %>
+      <tr>
+        <td><%= todo.name %></td>
+        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+        <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1>Simple Modal App</h1>
+<p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-1-title">
+          Micromodal
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+        <p>
+        Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+        </p>
+      </main>
+      <footer class="modal__footer">
+        <button class="modal__btn modal__btn-primary">Continue</button>
+        <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<% #Adding Links %>
+
+<div class="field">
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</div>
+<div class="field">
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+</div>
+<div class="field">
+  <%= form.label :file %>
+  <%= form.file_field :file %>
+</div>
+<div class="action">
+  <%= form.submit %>
+</div>
+<% end %>
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Today</h1>
+4:    
+5:    <table>
+6:      <thead>
+7:        <tr>
+8:          <th><%= link_to 'Add Task', new_todo_path %></th>
+9:          <th colspan="3"></th>
+10:        </tr>
+11:      </thead>
+12:    
+13:      <tbody>
+14:        <% @todos.each do |todo| %>
+15:          <tr>
+16:            <td><%= todo.name %></td>
+17:            <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+18:            <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+19:          </tr>
+20:        <% end %>
+21:      </tbody>
+22:    </table>
+23:    
+24:    <br>
+25:    
+26:    <h1>Simple Modal App</h1>
+27:    <p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+28:    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+29:      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+30:        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+31:          <header class="modal__header">
+32:            <h2 class="modal__title" id="modal-1-title">
+33:              Micromodal
+34:            </h2>
+35:            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+36:          </header>
+37:          <main class="modal__content" id="modal-1-content">
+38:            <p>
+39:            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+40:            </p>
+41:          </main>
+42:          <footer class="modal__footer">
+43:            <button class="modal__btn modal__btn-primary">Continue</button>
+44:            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+45:          </footer>
+46:        </div>
+47:      </div>
+48:    </div>
+49:    
+50:    <% #Adding Links %>
+51:    
+52:    <div class="field">
+53:      <%= form.label :title %>
+54:      <%= form.text_field :title %>
+55:    </div>
+56:    <div class="field">
+57:      <%= form.label :description %>
+58:      <%= form.text_area :description %>
+59:    </div>
+60:    <div class="field">
+61:      <%= form.label :file %>
+62:      <%= form.file_field :file %>
+63:    </div>
+64:    <div class="action">
+65:      <%= form.submit %>
+66:    </div>
+67:    <% end %>
+  
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+app/views/tasks/index.html.erb:69: syntax error, unexpected `end', expecting end-of-input
+Started GET "/tasks" for ::1 at 2021-08-05 06:42:16 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 27.1ms | Allocations: 4767)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 4839)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms | Allocations: 6241)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_todo_path' for #<ActionView::Base:0x0000000000e5b0>
+Did you mean?  new_task_path
+               new_user_path
+               new_group_path):
+     5: <table>
+     6:   <thead>
+     7:     <tr>
+     8:       <th><%= link_to 'Add Task', new_todo_path %></th>
+     9:       <th colspan="3"></th>
+    10:     </tr>
+    11:   </thead>
+  
+app/views/tasks/index.html.erb:8
+Started GET "/tasks" for ::1 at 2021-08-05 06:46:41 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 4766)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4838)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms | Allocations: 6244)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_todo_path' for #<ActionView::Base:0x0000000000ea88>
+Did you mean?  new_task_path
+               new_user_path
+               new_group_path):
+     5: <table>
+     6:   <thead>
+     7:     <tr>
+     8:       <th><%= link_to 'Add Task', new_todo_path %></th>
+     9:       <th colspan="3"></th>
+    10:     </tr>
+    11:   </thead>
+  
+app/views/tasks/index.html.erb:8
+Started GET "/tasks" for ::1 at 2021-08-05 06:46:45 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 4297)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 4363)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 4901)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_todo_path' for #<ActionView::Base:0x0000000000ee98>
+Did you mean?  new_task_path
+               new_user_path
+               new_group_path):
+     5: <table>
+     6:   <thead>
+     7:     <tr>
+     8:       <th><%= link_to 'Add Task', new_todo_path %></th>
+     9:       <th colspan="3"></th>
+    10:     </tr>
+    11:   </thead>
+  
+app/views/tasks/index.html.erb:8
+Started GET "/tasks" for ::1 at 2021-08-05 06:47:32 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 4297)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 4363)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 4822)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_todo_path' for #<ActionView::Base:0x0000000000f190>
+Did you mean?  new_task_path
+               new_user_path
+               new_group_path):
+     5: <table>
+     6:   <thead>
+     7:     <tr>
+     8:       <th><%= link_to 'Add Task', new_todo_path %></th>
+     9:       <th colspan="3"></th>
+    10:     </tr>
+    11:   </thead>
+  
+app/views/tasks/index.html.erb:8
+Started GET "/tasks" for ::1 at 2021-08-05 06:48:10 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1953)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2025)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 3352)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:   </thead>
+    12: 
+    13:   <tbody>
+    14:     <% @todos.each do |todo| %>
+    15:       <tr>
+    16:         <td><%= todo.name %></td>
+    17:         <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+  
+app/views/tasks/index.html.erb:14
+Started GET "/tasks" for ::1 at 2021-08-05 06:49:30 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 5789)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 5861)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.5ms | Allocations: 7260)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000fa00>
+Did you mean?  for
+               fork):
+    50: <% #Adding Links %>
+    51: 
+    52: <div class="field">
+    53:   <%= form.label :title %>
+    54:   <%= form.text_field :title %>
+    55: </div>
+    56: <div class="field">
+  
+app/views/tasks/index.html.erb:53
+Started GET "/tasks" for ::1 at 2021-08-05 06:56:59 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 30.8ms | Allocations: 6541)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 6633)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 1.3ms | Allocations: 13034)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x00000000009e98>
+Did you mean?  for
+               fork):
+    50: <% #Adding Links %>
+    51: 
+    52: <div class="field">
+    53:   <%= form.label :title %>
+    54:   <%= form.text_field :title %>
+    55: </div>
+    56: <div class="field">
+  
+app/views/tasks/index.html.erb:53
+Started GET "/tasks" for ::1 at 2021-08-05 07:07:39 -0400
+Processing by TasksController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tasks_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  Rendered tasks/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1468)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 1542)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 1.3ms | Allocations: 3661)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Today</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= link_to 'Add Task', new_task_path %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.name %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td><%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1>Simple Modal App</h1>
+<p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-1-title">
+          Micromodal
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content">
+        <p>
+        Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+        </p>
+      </main>
+      <footer class="modal__footer">
+        <button class="modal__btn modal__btn-primary">Continue</button>
+        <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<% #Adding Links %>
+
+<%= form_for(@task) do |f| %>
+<div class="field">
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</div>
+<div class="field">
+  <%= form.label :description %>
+  <%= form.text_area :description %>
+</div>
+<div class="field">
+  <%= form.label :file %>
+  <%= form.file_field :file %>
+</div>
+<div class="actions">
+  <%= form.submit %>
+</div>
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Today</h1>
+4:    
+5:    <table>
+6:      <thead>
+7:        <tr>
+8:          <th><%= link_to 'Add Task', new_task_path %></th>
+9:          <th colspan="3"></th>
+10:        </tr>
+11:      </thead>
+12:    
+13:      <tbody>
+14:        <% @tasks.each do |task| %>
+15:          <tr>
+16:            <td><%= task.name %></td>
+17:            <td><%= link_to 'Edit', edit_task_path(task) %></td>
+18:            <td><%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+19:          </tr>
+20:        <% end %>
+21:      </tbody>
+22:    </table>
+23:    
+24:    <br>
+25:    
+26:    <h1>Simple Modal App</h1>
+27:    <p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
+28:    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+29:      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+30:        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+31:          <header class="modal__header">
+32:            <h2 class="modal__title" id="modal-1-title">
+33:              Micromodal
+34:            </h2>
+35:            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+36:          </header>
+37:          <main class="modal__content" id="modal-1-content">
+38:            <p>
+39:            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+40:            </p>
+41:          </main>
+42:          <footer class="modal__footer">
+43:            <button class="modal__btn modal__btn-primary">Continue</button>
+44:            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+45:          </footer>
+46:        </div>
+47:      </div>
+48:    </div>
+49:    
+50:    <% #Adding Links %>
+51:    
+52:    <%= form_for(@task) do |f| %>
+53:    <div class="field">
+54:      <%= form.label :title %>
+55:      <%= form.text_field :title %>
+56:    </div>
+57:    <div class="field">
+58:      <%= form.label :description %>
+59:      <%= form.text_area :description %>
+60:    </div>
+61:    <div class="field">
+62:      <%= form.label :file %>
+63:      <%= form.file_field :file %>
+64:    </div>
+65:    <div class="actions">
+66:      <%= form.submit %>
+67:    </div>
+  
+app/views/tasks/index.html.erb:69: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/index.html.erb:69: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/index.html.erb:69: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/index.html.erb:69: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/index.html.erb:69: syntax error, unexpected end-of-input, expecting `end'
+app/views/tasks/index.html.erb:69: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/tasks" for ::1 at 2021-08-05 07:08:09 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2301)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2374)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.5ms | Allocations: 3792)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    49: 
+    50: <% #Adding Links %>
+    51: 
+    52: <%= form_for(@task) do |f| %>
+    53: <div class="field">
+    54:   <%= form.label :title %>
+    55:   <%= form.text_field :title %>
+  
+app/views/tasks/index.html.erb:52
+Started GET "/tasks" for ::1 at 2021-08-05 07:09:08 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 291.1ms | Allocations: 13972)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 543.0ms | Allocations: 23259)
+Completed 200 OK in 576ms (Views: 566.3ms | ActiveRecord: 0.5ms | Allocations: 24737)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:09:20 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.2ms | Allocations: 1883)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2272)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 2339)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 3.1ms | Allocations: 6730)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: todo) do |form| %>
+    2:   <% if todo.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
+    5: 
+  
+app/views/tasks/_form.html.erb:2
+app/views/tasks/_form.html.erb:1
+app/views/tasks/new.html.erb:3
+Started GET "/tasks" for ::1 at 2021-08-05 07:09:37 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 3849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.0ms | Allocations: 8045)
+Completed 200 OK in 99ms (Views: 96.3ms | ActiveRecord: 0.6ms | Allocations: 8577)
+
+
+Started POST "/tasks" for ::1 at 2021-08-05 07:09:48 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"", "description"=>"", "commit"=>"Save "}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 816)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: task
+Did you mean?  title
+               controller
+               description
+               action):
+  
+app/controllers/tasks_controller.rb:44:in `task_params'
+app/controllers/tasks_controller.rb:11:in `create'
+Started GET "/tasks" for ::1 at 2021-08-05 07:09:51 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 3857)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 171.5ms | Allocations: 8050)
+Completed 200 OK in 175ms (Views: 172.9ms | ActiveRecord: 0.7ms | Allocations: 8595)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:09:54 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.3ms | Allocations: 1582)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1679)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1745)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2196)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: todo) do |form| %>
+    2:   <% if todo.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
+    5: 
+  
+app/views/tasks/_form.html.erb:2
+app/views/tasks/_form.html.erb:1
+app/views/tasks/new.html.erb:3
+Started GET "/tasks" for ::1 at 2021-08-05 07:10:08 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 3714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 87.1ms | Allocations: 7792)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.7ms | Allocations: 8300)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:10:14 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.8ms | Allocations: 1573)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 1742)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2208)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: todo) do |form| %>
+    2:   <% if todo.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
+    5: 
+  
+app/views/tasks/_form.html.erb:2
+app/views/tasks/_form.html.erb:1
+app/views/tasks/new.html.erb:3
+Started GET "/tasks" for ::1 at 2021-08-05 07:10:16 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 3705)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.4ms | Allocations: 7782)
+Completed 200 OK in 103ms (Views: 99.8ms | ActiveRecord: 0.6ms | Allocations: 8277)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:10:22 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.4ms | Allocations: 1573)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 1736)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2181)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_with(model: todo) do |form| %>
+    2:   <% if todo.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
+    5: 
+  
+app/views/tasks/_form.html.erb:2
+app/views/tasks/_form.html.erb:1
+app/views/tasks/new.html.erb:3
+Started GET "/tasks" for ::1 at 2021-08-05 07:12:38 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 4427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.9ms | Allocations: 8904)
+Completed 200 OK in 125ms (Views: 117.1ms | ActiveRecord: 0.6ms | Allocations: 10270)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:12:40 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 6.7ms | Allocations: 1133)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.3ms | Allocations: 5639)
+Completed 200 OK in 98ms (Views: 91.9ms | ActiveRecord: 0.0ms | Allocations: 6307)
+
+
+Started POST "/tasks" for ::1 at 2021-08-05 07:12:46 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"name"=>"read"}, "commit"=>"Create Task"}
+[31mUnpermitted parameter: :name[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 180ms (ActiveRecord: 0.0ms | Allocations: 10133)
+
+
+Started GET "/dashboard" for ::1 at 2021-08-05 07:12:47 -0400
+Processing by MlmcController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mlmc/index.html.erb within layouts/application
+  Rendered mlmc/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.5ms | Allocations: 4528)
+Completed 200 OK in 93ms (Views: 86.0ms | ActiveRecord: 0.0ms | Allocations: 5696)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:12:50 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.2ms | Allocations: 580)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.4ms | Allocations: 4851)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.0ms | Allocations: 5391)
+
+
+Started GET "/tasks" for ::1 at 2021-08-05 07:12:52 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3799)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 188.7ms | Allocations: 7877)
+Completed 200 OK in 201ms (Views: 198.9ms | ActiveRecord: 0.5ms | Allocations: 8392)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:12:54 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.7ms | Allocations: 509)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 624)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | Allocations: 4819)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.0ms | Allocations: 5303)
+
+
+Started POST "/tasks" for ::1 at 2021-08-05 07:13:00 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"name"=>"write"}, "commit"=>"Create Task"}
+[31mUnpermitted parameter: :name[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 22ms (ActiveRecord: 0.0ms | Allocations: 950)
+
+
+Started GET "/dashboard" for ::1 at 2021-08-05 07:13:01 -0400
+Processing by MlmcController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mlmc/index.html.erb within layouts/application
+  Rendered mlmc/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 4200)
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.0ms | Allocations: 4665)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:13:03 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 4.4ms | Allocations: 507)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.2ms | Allocations: 4772)
+Completed 200 OK in 87ms (Views: 85.6ms | ActiveRecord: 0.0ms | Allocations: 5253)
+
+
+Started GET "/tasks" for ::1 at 2021-08-05 07:13:04 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 3714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.7ms | Allocations: 7785)
+Completed 200 OK in 98ms (Views: 96.1ms | ActiveRecord: 0.6ms | Allocations: 8283)
+
+
+Started GET "/tasks" for ::1 at 2021-08-05 07:15:37 -0400
+  
+SyntaxError (C:/Users/Asdf/OneDrive/Documents/GitHub/MLMC/app/controllers/tasks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/tasks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/tasks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/tasks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/tasks" for ::1 at 2021-08-05 07:20:21 -0400
+  
+SyntaxError (C:/Users/Asdf/OneDrive/Documents/GitHub/MLMC/app/controllers/tasks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/tasks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/tasks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/tasks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/tasks" for ::1 at 2021-08-05 07:20:59 -0400
+Processing by TasksController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tasks_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4723)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 77.9ms | Allocations: 9009)
+Completed 200 OK in 100ms (Views: 80.9ms | ActiveRecord: 1.6ms | Allocations: 12073)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:21:02 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 5.6ms | Allocations: 721)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 28.7ms | Allocations: 844)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 144.4ms | Allocations: 5023)
+Completed 200 OK in 197ms (Views: 158.1ms | ActiveRecord: 6.1ms | Allocations: 9038)
+
+
+Started POST "/tasks" for ::1 at 2021-08-05 07:21:06 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"name"=>"read"}, "commit"=>"Create Task"}
+[31mUnpermitted parameter: :name[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms | Allocations: 5066)
+
+
+Started GET "/dashboard" for ::1 at 2021-08-05 07:21:06 -0400
+Processing by MlmcController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mlmc/index.html.erb within layouts/application
+  Rendered mlmc/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 59)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 4442)
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.0ms | Allocations: 5241)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:21:09 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 2.9ms | Allocations: 580)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 109.9ms | Allocations: 4851)
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 0.0ms | Allocations: 5391)
+
+
+Started GET "/tasks" for ::1 at 2021-08-05 07:21:10 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 3804)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.3ms | Allocations: 7860)
+Completed 200 OK in 107ms (Views: 101.4ms | ActiveRecord: 0.5ms | Allocations: 8375)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:21:13 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 1.9ms | Allocations: 507)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.0ms | Allocations: 4823)
+Completed 200 OK in 88ms (Views: 86.2ms | ActiveRecord: 0.0ms | Allocations: 5307)
+
+
+Started POST "/tasks" for ::1 at 2021-08-05 07:21:20 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "task"=>{"name"=>"update"}, "commit"=>"Create Task"}
+[31mUnpermitted parameter: :name[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms | Allocations: 952)
+
+
+Started GET "/dashboard" for ::1 at 2021-08-05 07:21:21 -0400
+Processing by MlmcController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mlmc/index.html.erb within layouts/application
+  Rendered mlmc/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.7ms | Allocations: 4208)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.0ms | Allocations: 4673)
+
+
+Started GET "/tasks/new" for ::1 at 2021-08-05 07:21:23 -0400
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (Duration: 3.9ms | Allocations: 511)
+  Rendered tasks/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 626)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.3ms | Allocations: 4776)
+Completed 200 OK in 129ms (Views: 126.1ms | ActiveRecord: 0.0ms | Allocations: 5257)
+
+
+Started GET "/tasks" for ::1 at 2021-08-05 07:21:26 -0400
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY created_at DESC[0m
+  ↳ app/views/tasks/index.html.erb:14
+  Rendered tasks/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 3707)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 153.0ms | Allocations: 7758)
+Completed 200 OK in 157ms (Views: 154.7ms | ActiveRecord: 0.6ms | Allocations: 8256)
+
+

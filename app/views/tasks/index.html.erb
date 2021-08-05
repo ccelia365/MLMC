@@ -5,17 +5,17 @@
 <table>
   <thead>
     <tr>
-      <th><%= link_to 'Add Task', new_todo_path %></th>
+      <th><%= link_to 'Add Task', new_task_path %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @todos.each do |todo| %>
+    <% @tasks.each do |task| %>
       <tr>
-        <td><%= todo.name %></td>
-        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
-        <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= task.name %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td><%= link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -49,19 +49,20 @@
 
 <% #Adding Links %>
 
-<div class="field">
-  <%= form.label :title %>
-  <%= form.text_field :title %>
-</div>
-<div class="field">
-  <%= form.label :description %>
-  <%= form.text_area :description %>
-</div>
-<div class="field">
-  <%= form.label :file %>
-  <%= form.file_field :file %>
-</div>
-<div class="action">
-  <%= form.submit %>
-</div>
+<%= form_with do |form| %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+  <div class="field">
+    <%= form.label :file %>
+    <%= form.file_field :file %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
 <% end %>
