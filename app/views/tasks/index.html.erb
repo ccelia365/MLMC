@@ -1,3 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Today</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= link_to 'Add Task', new_todo_path %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todos.each do |todo| %>
+      <tr>
+        <td><%= todo.name %></td>
+        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
+        <td><%= link_to 'Delete', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
 <h1>Simple Modal App</h1>
 <p><button data-micromodal-trigger="modal-1">Click here to open the modal!</button></p>
 <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
